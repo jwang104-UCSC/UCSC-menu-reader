@@ -1,11 +1,12 @@
-# Alexa Skills Kit SDK Sample - Hello World
-A simple [AWS Lambda](http://aws.amazon.com/lambda) function that demonstrates how to write a skill for the Amazon Echo using the Alexa SDK.
+# Alexa Skill - Menu Reader
+A simple [AWS Lambda](http://aws.amazon.com/lambda) function that reads the menu of a dining hall from UCSC.
+NOTE: This readme was originally intended for the hello world example. It is no longer accurate after our modifications to the program, but should still provide useful information.
 
 ## Concepts
-This simple sample has no external dependencies or session management, and shows the most basic example of how to create a Lambda function for handling Alexa Skill requests.
+This skill takes the hello world example and changes the response so that Alexa reads the text from a webpage instead.
 
 ## Setup
-To run this example skill you need to do two things. The first is to deploy the example code in lambda, and the second is to configure the Alexa skill to use Lambda.
+To run this example skill you need to do two things. The first is to deploy the code in lambda, and the second is to configure the Alexa skill to use Lambda.
 
 ### AWS Lambda Setup
 1. Go to the AWS Console and click on the Lambda link. Note: ensure you are in us-east or you wont be able to use Alexa with Lambda.
@@ -40,5 +41,5 @@ To run this example skill you need to do two things. The first is to deploy the 
 
 ## Examples
 ### One-shot model:
-    User: "Alexa, tell Greeter to say hello."
-    Alexa: "Hello World!"
+    User: "Alexa, ask the dining hall what's on the menu."
+    Alexa: "Today's menu is ..."
